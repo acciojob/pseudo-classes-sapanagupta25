@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        article p:first-child {
+            color: white;
+            background-color: black;
+        }
+
+        article p:nth-child(2) {
+            color: black;
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            width: 50%;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        li:nth-child(odd) {
+            background-color: white;
+        }
+
+        li:first-child, li:last-child {
+            font-size: 22px;
+        }
+
+        li:nth-child(3) {
+            background-color: pink;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <article>
+        <p>First paragraph...</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eveniet deleniti, vitae dolores asperiores ipsa! Possimus, iste doloremque delectus illo quos in nulla nostrum aspernatur minus, porro hic debitis? Repellat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum enim dolores saepe, quod quas, nam unde eveniet delectus, eaque atque. Tempore, nesciunt!</p>
+    </article>
 
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ul>
 </body>
-
 </html>
